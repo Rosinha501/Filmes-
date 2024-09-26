@@ -1,55 +1,39 @@
-<html lang="pt-br">
+body{
+    background: rgb(26, 38, 44);
+    color:rgb(7, 7, 7);
+    margin: 0px;
+    font-family: "Baskervville SC", system-ui;
+}
+header{
+    border: solid 2px rgb(3, 3, 3);
+    padding: 10px;  
+    font-size: 40px;
+}
+.chamada {
+    background-color: rgb(188, 229, 248); 
+    padding-bottom: 100px;
+    padding-top: 100px;
+    display: flex; 
+    justify-content: center;
+}
+.titulo-video{
+    margin-right: 5%;
+}
 
-<head>
-    <link rel="stylesheet" href="style.css" />
-    <title>FILMES</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-    <header>FILMES</header>
-    <section class="chamada">
-        <div class="titulo-video">
-            <h1>A Casa do Mikey Mouse/Full episodeos.</h1>
-            <p>#amoMikey</p>
-        </div>
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TyNmOKlkgII?si=mW2WwJQK64sEoAJp"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
-
-
-    <section class="categoria">
-        <h2>desenhos</h2>
-        <div class="categoria-videos">
-            <a href="https://www.youtube.com/watch?v=I1fPuqzNWeo">
-                <img src="https://img.youtube.com/vi/I1fPuqzNWeo/maxresdefault.jpg"/>
-            </a>
-
-            <a href="https://www.youtube.com/watch?v=-3Rl-Z-pf7c">
-                <img scr="https://img.youtube.com/vi/-3Rl-Z-pf7c/maxresdefault.jpg"/>
-            </a>
-
-            <a href="https://www.youtube.com/watch?v=-3Rl-Z-pf7c">
-                <img scr="https://img.youtube.com/vi/-3Rl-Z-pf7c/maxresdefault.jpg"/>
-            </a>
-
-            <a href="https://www.youtube.com/watch?v=-3Rl-Z-pf7c">
-                <img scr="https://img.youtube.com/vi/-3Rl-Z-pf7c/maxresdefault.jpg"/>
-            </a>
-
-            <a href="https://www.youtube.com/watch?v=-3Rl-Z-pf7c">
-                <img scr="https://img.youtube.com/vi/-3Rl-Z-pf7c/maxresdefault.jpg"/>
-            </a>
-        </div>
-       
-    </section>
-</body>
-
-</html>
+.categoria{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.categoria-videos{
+    display: flex;
+    overflow: auto;
+    gap:10px;
+}
+.categoria-videos img{
+    opacity: 0.5;
+    height: 200px;
+    border: solid 2px  pink;
+}
+.categoria-videos img:hover{
+    opacity: 1.0;
+}
