@@ -23,6 +23,7 @@ header{
 .categoria{
     padding-right: 30px;
     padding-left: 30px;
+    padding-bottom: 40px;
 }
 .categoria-videos{
     display: flex;
@@ -31,9 +32,12 @@ header{
 }
 .categoria-videos img{
     opacity: 0.5;
-    height: 200px;
     border: solid 2px  pink;
 }
 .categoria-videos img:hover{
     opacity: 1.0;
+}
+
+img{
+    height:200px;
 }
